@@ -1,16 +1,142 @@
-# React + Vite
+# 🛠️ HANDS.ON - Edtech Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Продающий лендинг для образовательной платформы **HANDS.ON** — школы современных blue-collar профессий для поколения Z.
 
-Currently, two official plugins are available:
+## 🎯 О проекте
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**HANDS.ON** — это яркий, вдохновляющий и технологичный лендинг, который:
+- Продает идею: "Профессии руками — это круто, технологично и выгодно"
+- Презентует каталог из 6 современных курсов
+- Демонстрирует фишки платформы (AR-симуляторы, AI-наставник, геймификация)
+- Ведет пользователя к регистрации на бесплатный интенсив
 
-## React Compiler
+## ✨ Особенности
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ **Современный стек**: React + Vite + Tailwind CSS v4
+- 🎨 **Анимации**: Framer Motion для плавных переходов
+- 📱 **Адаптивный дизайн**: Отлично выглядит на всех устройствах
+- 🎮 **Интерактивность**: Hover-эффекты, анимации при скролле
+- 🌈 **Цветовая схема**: Черный + неон-зеленый (#00FF90)
+- 🚀 **Оптимизация**: Быстрая загрузка и производительность
 
-## Expanding the ESLint configuration
+## 📦 Структура лендинга
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Hero** - Главный экран с призывом к действию
+2. **Mission** - Миссия и ценности платформы
+3. **Courses** - Каталог из 6 курсов с подробным описанием
+4. **Features** - 8 ключевых фишек платформы
+5. **Community** - Статистика, челленджи и отзывы студентов
+6. **How It Works** - 3 шага от новичка до профи
+7. **CTA** - Форма регистрации на бесплатный интенсив
+8. **Footer** - Навигация, соцсети и контакты
+
+## 🚀 Быстрый старт
+
+### Требования
+
+- Node.js >= 22.x
+- npm >= 10.x
+
+### Установка
+
+```bash
+# Установка зависимостей
+npm install
+
+# Запуск dev-сервера
+npm run dev
+
+# Сборка для production
+npm run build
+
+# Превью production сборки
+npm run preview
+```
+
+## 🛠️ Технологии
+
+- **React** 18.3 - UI библиотека
+- **Vite** 7.1 - Быстрый сборщик
+- **Tailwind CSS** v4 - Utility-first CSS
+- **Framer Motion** 11.x - Анимации
+- **Inter** - Шрифт Google Fonts
+
+## 📂 Структура проекта
+
+```
+blue-collar-edu/
+├── src/
+│   ├── components/        # React компоненты
+│   │   ├── Hero.jsx
+│   │   ├── Mission.jsx
+│   │   ├── Courses.jsx
+│   │   ├── Features.jsx
+│   │   ├── Community.jsx
+│   │   ├── HowItWorks.jsx
+│   │   ├── CTA.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx           # Главный компонент
+│   ├── index.css         # Глобальные стили
+│   └── main.jsx          # Точка входа
+├── public/               # Статические файлы
+├── index.html           # HTML шаблон
+├── tailwind.config.js   # Конфиг Tailwind
+├── vite.config.js       # Конфиг Vite
+└── package.json         # Зависимости
+```
+
+## 🎨 Дизайн-система
+
+### Цвета
+
+- **Черный**: `#000000` - основной фон
+- **Неон-зеленый**: `#00FF90` - акцентный цвет
+- **Серый**: оттенки для текста и границ
+
+### Типографика
+
+- **Шрифт**: Inter (Google Fonts)
+- **Заголовки**: 800-900 weight
+- **Текст**: 400-600 weight
+
+### Анимации
+
+- Плавные переходы при скролле
+- Hover-эффекты на карточках
+- Анимированные фоны и частицы
+- Интерактивные кнопки с свечением
+
+## 📱 Адаптивность
+
+Лендинг полностью адаптирован для:
+- 📱 Mobile (320px+)
+- 📲 Tablet (768px+)
+- 💻 Desktop (1024px+)
+- 🖥️ Large Desktop (1440px+)
+
+## 🌐 Деплой
+
+Проект готов к деплою на:
+- Vercel
+- Netlify
+- GitHub Pages
+- Any static hosting
+
+```bash
+# Сборка production версии
+npm run build
+
+# Папка dist/ готова к деплою
+```
+
+## 📄 Лицензия
+
+MIT License
+
+## 👨‍💻 Автор
+
+Created with ❤️ for HANDS.ON edtech platform
+
+---
+
+**Работай руками, думай как инженер** 🛠️
