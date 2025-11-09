@@ -81,12 +81,35 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <button className="group relative px-8 py-4 bg-neon-green text-black font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,144,0.5)]">
+            <button
+              className="group relative px-8 py-4 text-black font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
+              style={{
+                backgroundColor: '#00FF90',
+                boxShadow: '0 4px 20px rgba(0, 255, 144, 0.3)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.6)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.3)';
+              }}
+            >
               <span className="relative z-10">Попробовать бесплатно</span>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
             </button>
 
-            <button className="px-8 py-4 bg-transparent text-white font-bold text-lg rounded-lg border-2 border-gray-700 hover:border-neon-green transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,144,0.3)]">
+            <button
+              className="px-8 py-4 bg-transparent text-white font-bold text-lg rounded-lg border-2 transition-all duration-300"
+              style={{ borderColor: '#4a5568' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#00FF90';
+                e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 255, 144, 0.3)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = '#4a5568';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+            >
               Смотреть курсы
             </button>
           </motion.div>

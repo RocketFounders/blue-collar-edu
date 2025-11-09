@@ -135,8 +135,17 @@ const Community = () => {
                   </div>
                 </div>
 
-                <button className="w-full py-2 bg-gray-800 text-white font-bold rounded-lg
-                                 group-hover:bg-neon-green group-hover:text-black transition-all duration-300">
+                <button
+                  className="w-full py-2 bg-gray-800 text-white font-bold rounded-lg transition-all duration-300"
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#00FF90';
+                    e.currentTarget.style.color = '#000';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#1f2937';
+                    e.currentTarget.style.color = '#fff';
+                  }}
+                >
                   Участвовать
                 </button>
               </motion.div>

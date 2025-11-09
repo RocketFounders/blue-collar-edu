@@ -148,8 +148,17 @@ const Footer = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-2 bg-neon-green text-black font-bold rounded-lg
-                         hover:shadow-[0_0_20px_rgba(0,255,144,0.5)] transition-all duration-300"
+                className="px-6 py-2 text-black font-bold rounded-lg transition-all duration-300"
+                style={{
+                  backgroundColor: '#00FF90',
+                  boxShadow: '0 2px 10px rgba(0, 255, 144, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 255, 144, 0.6)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 2px 10px rgba(0, 255, 144, 0.3)';
+                }}
               >
                 OK
               </motion.button>

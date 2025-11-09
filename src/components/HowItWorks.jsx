@@ -167,8 +167,19 @@ const HowItWorks = () => {
             <p className="text-gray-400 mb-6 text-lg">
               Готов начать свой путь?
             </p>
-            <button className="px-10 py-5 bg-neon-green text-black font-black text-lg rounded-lg
-                             hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,255,144,0.6)]">
+            <button
+              className="px-10 py-5 text-black font-black text-lg rounded-lg hover:scale-105 transition-all duration-300"
+              style={{
+                backgroundColor: '#00FF90',
+                boxShadow: '0 4px 20px rgba(0, 255, 144, 0.4)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.7)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.4)';
+              }}
+            >
               Начать обучение сейчас
             </button>
           </motion.div>

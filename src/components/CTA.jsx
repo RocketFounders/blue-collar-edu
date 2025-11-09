@@ -176,8 +176,17 @@ const CTA = () => {
                     type="submit"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full py-4 bg-neon-green text-black font-black text-lg rounded-lg
-                             hover:shadow-[0_0_40px_rgba(0,255,144,0.6)] transition-all duration-300"
+                    className="w-full py-4 text-black font-black text-lg rounded-lg transition-all duration-300"
+                    style={{
+                      backgroundColor: '#00FF90',
+                      boxShadow: '0 4px 20px rgba(0, 255, 144, 0.4)'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.7)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.4)';
+                    }}
                   >
                     Получить бесплатный доступ
                   </motion.button>

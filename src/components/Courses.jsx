@@ -157,8 +157,24 @@ const Courses = () => {
                   </div>
                 </div>
 
-                <button className="w-full py-3 bg-neon-green/10 text-neon-green font-bold rounded-lg border border-neon-green/30
-                                 hover:bg-neon-green hover:text-black transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(0,255,144,0.3)]">
+                <button
+                  className="w-full py-3 font-bold rounded-lg border transition-all duration-300"
+                  style={{
+                    backgroundColor: 'rgba(0, 255, 144, 0.1)',
+                    borderColor: 'rgba(0, 255, 144, 0.3)',
+                    color: '#00FF90'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#00FF90';
+                    e.currentTarget.style.color = '#000';
+                    e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 255, 144, 0.5)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = 'rgba(0, 255, 144, 0.1)';
+                    e.currentTarget.style.color = '#00FF90';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
                   Подробнее
                 </button>
               </div>
@@ -179,8 +195,20 @@ const Courses = () => {
           <p className="text-gray-400 mb-6">
             Не знаешь, какой курс выбрать?
           </p>
-          <button className="px-8 py-4 bg-transparent text-white font-bold text-lg rounded-lg border-2 border-neon-green
-                           hover:bg-neon-green hover:text-black transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,144,0.5)]">
+          <button
+            className="px-8 py-4 bg-transparent text-white font-bold text-lg rounded-lg border-2 transition-all duration-300"
+            style={{ borderColor: '#00FF90' }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#00FF90';
+              e.currentTarget.style.color = '#000';
+              e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 255, 144, 0.6)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
+              e.currentTarget.style.color = '#fff';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+          >
             Пройди тест на профориентацию
           </button>
         </motion.div>
