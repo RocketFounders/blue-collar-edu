@@ -1,86 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer base {
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Inter', system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 0;
+  * {
+    box-sizing: border-box;
+  }
 }
 
-* {
-  box-sizing: border-box;
-}
+@layer components {
+  .neon-glow {
+    text-shadow: 0 0 10px #00FF90, 0 0 20px #00FF90, 0 0 30px #00FF90;
+  }
 
-.neon-glow {
-  text-shadow: 0 0 10px #00FF90, 0 0 20px #00FF90, 0 0 30px #00FF90;
-}
+  .text-gradient {
+    background: linear-gradient(to right, #fff, #00FF90, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.text-gradient {
-  background: linear-gradient(to right, #fff, #00FF90, #fff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  /* Кнопки с гарантированной видимостью */
+  .btn-primary {
+    background-color: #00FF90 !important;
+    color: #000000 !important;
+    border: none !important;
+    padding: 1rem 2rem !important;
+    font-weight: 700 !important;
+    font-size: 1.125rem !important;
+    border-radius: 0.5rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 20px rgba(0, 255, 144, 0.5) !important;
+    outline: none !important;
+  }
 
-/* Кнопки с гарантированной видимостью */
-.btn-primary {
-  background-color: #00FF90 !important;
-  color: #000000 !important;
-  border: none !important;
-  padding: 1rem 2rem !important;
-  font-weight: 700 !important;
-  font-size: 1.125rem !important;
-  border-radius: 0.5rem !important;
-  cursor: pointer !important;
-  transition: all 0.3s ease !important;
-  box-shadow: 0 4px 20px rgba(0, 255, 144, 0.5) !important;
-  outline: none !important;
-}
+  .btn-primary:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 0 40px rgba(0, 255, 144, 0.8) !important;
+  }
 
-.btn-primary:hover {
-  transform: scale(1.05) !important;
-  box-shadow: 0 0 40px rgba(0, 255, 144, 0.8) !important;
-}
+  .btn-secondary {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid #00FF90 !important;
+    padding: 1rem 2rem !important;
+    font-weight: 700 !important;
+    font-size: 1.125rem !important;
+    border-radius: 0.5rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+  }
 
-.btn-secondary {
-  background-color: transparent !important;
-  color: #ffffff !important;
-  border: 2px solid #00FF90 !important;
-  padding: 1rem 2rem !important;
-  font-weight: 700 !important;
-  font-size: 1.125rem !important;
-  border-radius: 0.5rem !important;
-  cursor: pointer !important;
-  transition: all 0.3s ease !important;
-}
+  .btn-secondary:hover {
+    background-color: #00FF90 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 30px rgba(0, 255, 144, 0.7) !important;
+  }
 
-.btn-secondary:hover {
-  background-color: #00FF90 !important;
-  color: #000000 !important;
-  box-shadow: 0 0 30px rgba(0, 255, 144, 0.7) !important;
-}
+  .btn-outline {
+    background-color: rgba(0, 255, 144, 0.15) !important;
+    color: #00FF90 !important;
+    border: 1px solid rgba(0, 255, 144, 0.4) !important;
+    padding: 0.75rem !important;
+    font-weight: 700 !important;
+    border-radius: 0.5rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    width: 100%;
+  }
 
-.btn-outline {
-  background-color: rgba(0, 255, 144, 0.15) !important;
-  color: #00FF90 !important;
-  border: 1px solid rgba(0, 255, 144, 0.4) !important;
-  padding: 0.75rem !important;
-  font-weight: 700 !important;
-  border-radius: 0.5rem !important;
-  cursor: pointer !important;
-  transition: all 0.3s ease !important;
-  width: 100%;
-}
-
-.btn-outline:hover {
-  background-color: #00FF90 !important;
-  color: #000000 !important;
-  box-shadow: 0 0 20px rgba(0, 255, 144, 0.6) !important;
+  .btn-outline:hover {
+    background-color: #00FF90 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 20px rgba(0, 255, 144, 0.6) !important;
+  }
 }
