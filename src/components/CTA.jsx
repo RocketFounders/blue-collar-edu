@@ -176,25 +176,8 @@ const CTA = () => {
                     type="submit"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    style={{
-                      width: '100%',
-                      padding: '1rem',
-                      backgroundColor: '#00FF90',
-                      color: '#000000',
-                      fontWeight: '900',
-                      fontSize: '1.125rem',
-                      borderRadius: '0.5rem',
-                      border: 'none',
-                      cursor: 'pointer',
-                      transition: 'all 0.3s ease',
-                      boxShadow: '0 4px 20px rgba(0, 255, 144, 0.5)'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.8)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.5)';
-                    }}
+                    className="btn-primary"
+                    style={{ width: '100%' }}
                   >
                     Получить бесплатный доступ
                   </motion.button>

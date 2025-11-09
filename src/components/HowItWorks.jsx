@@ -167,28 +167,7 @@ const HowItWorks = () => {
             <p className="text-gray-400 mb-6 text-lg">
               Готов начать свой путь?
             </p>
-            <button
-              style={{
-                padding: '1.25rem 2.5rem',
-                backgroundColor: '#00FF90',
-                color: '#000000',
-                fontWeight: '900',
-                fontSize: '1.125rem',
-                borderRadius: '0.5rem',
-                border: 'none',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                boxShadow: '0 4px 20px rgba(0, 255, 144, 0.5)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.05)';
-                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.8)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'scale(1)';
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.5)';
-              }}
-            >
+            <button className="btn-primary" style={{ padding: '1.25rem 2.5rem' }}>
               Начать обучение сейчас
             </button>
           </motion.div>

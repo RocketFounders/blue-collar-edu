@@ -157,29 +157,7 @@ const Courses = () => {
                   </div>
                 </div>
 
-                <button
-                  style={{
-                    width: '100%',
-                    padding: '0.75rem',
-                    backgroundColor: 'rgba(0, 255, 144, 0.15)',
-                    color: '#00FF90',
-                    fontWeight: '700',
-                    borderRadius: '0.5rem',
-                    border: '1px solid rgba(0, 255, 144, 0.4)',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = '#00FF90';
-                    e.currentTarget.style.color = '#000000';
-                    e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 255, 144, 0.6)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = 'rgba(0, 255, 144, 0.15)';
-                    e.currentTarget.style.color = '#00FF90';
-                    e.currentTarget.style.boxShadow = 'none';
-                  }}
-                >
+                <button className="btn-outline">
                   Подробнее
                 </button>
               </div>
@@ -200,29 +178,7 @@ const Courses = () => {
           <p className="text-gray-400 mb-6">
             Не знаешь, какой курс выбрать?
           </p>
-          <button
-            style={{
-              padding: '1rem 2rem',
-              backgroundColor: 'transparent',
-              color: '#ffffff',
-              fontWeight: '700',
-              fontSize: '1.125rem',
-              borderRadius: '0.5rem',
-              border: '2px solid #00FF90',
-              cursor: 'pointer',
-              transition: 'all 0.3s ease'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#00FF90';
-              e.currentTarget.style.color = '#000000';
-              e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 255, 144, 0.7)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'transparent';
-              e.currentTarget.style.color = '#ffffff';
-              e.currentTarget.style.boxShadow = 'none';
-            }}
-          >
+          <button className="btn-secondary">
             Пройди тест на профориентацию
           </button>
         </motion.div>

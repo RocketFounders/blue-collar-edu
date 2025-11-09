@@ -81,53 +81,11 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <button
-              className="group relative overflow-hidden"
-              style={{
-                padding: '1rem 2rem',
-                backgroundColor: '#00FF90',
-                color: '#000000',
-                fontWeight: '700',
-                fontSize: '1.125rem',
-                borderRadius: '0.5rem',
-                border: 'none',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                boxShadow: '0 4px 20px rgba(0, 255, 144, 0.5)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.05)';
-                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.8)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'scale(1)';
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.5)';
-              }}
-            >
-              <span style={{ position: 'relative', zIndex: 10 }}>Попробовать бесплатно</span>
+            <button className="btn-primary">
+              Попробовать бесплатно
             </button>
 
-            <button
-              style={{
-                padding: '1rem 2rem',
-                backgroundColor: 'transparent',
-                color: '#ffffff',
-                fontWeight: '700',
-                fontSize: '1.125rem',
-                borderRadius: '0.5rem',
-                border: '2px solid #4a5568',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#00FF90';
-                e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 255, 144, 0.4)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#4a5568';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
-            >
+            <button className="btn-secondary">
               Смотреть курсы
             </button>
           </motion.div>
