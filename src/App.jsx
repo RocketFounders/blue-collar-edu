@@ -6,7 +6,6 @@ import Community from './components/Community'
 import HowItWorks from './components/HowItWorks'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
-import './index.css'
 
 function App() {
   return (
