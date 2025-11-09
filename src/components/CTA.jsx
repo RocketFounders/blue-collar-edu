@@ -176,16 +176,24 @@ const CTA = () => {
                     type="submit"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full py-4 text-black font-black text-lg rounded-lg transition-all duration-300"
                     style={{
+                      width: '100%',
+                      padding: '1rem',
                       backgroundColor: '#00FF90',
-                      boxShadow: '0 4px 20px rgba(0, 255, 144, 0.4)'
+                      color: '#000000',
+                      fontWeight: '900',
+                      fontSize: '1.125rem',
+                      borderRadius: '0.5rem',
+                      border: 'none',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease',
+                      boxShadow: '0 4px 20px rgba(0, 255, 144, 0.5)'
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.7)';
+                      e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.8)';
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.4)';
+                      e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.5)';
                     }}
                   >
                     Получить бесплатный доступ

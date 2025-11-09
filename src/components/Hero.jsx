@@ -82,28 +82,46 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <button
-              className="group relative px-8 py-4 text-black font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:scale-105"
+              className="group relative overflow-hidden"
               style={{
+                padding: '1rem 2rem',
                 backgroundColor: '#00FF90',
-                boxShadow: '0 4px 20px rgba(0, 255, 144, 0.3)'
+                color: '#000000',
+                fontWeight: '700',
+                fontSize: '1.125rem',
+                borderRadius: '0.5rem',
+                border: 'none',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 20px rgba(0, 255, 144, 0.5)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.6)';
+                e.currentTarget.style.transform = 'scale(1.05)';
+                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.8)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.3)';
+                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.5)';
               }}
             >
-              <span className="relative z-10">Попробовать бесплатно</span>
-              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+              <span style={{ position: 'relative', zIndex: 10 }}>Попробовать бесплатно</span>
             </button>
 
             <button
-              className="px-8 py-4 bg-transparent text-white font-bold text-lg rounded-lg border-2 transition-all duration-300"
-              style={{ borderColor: '#4a5568' }}
+              style={{
+                padding: '1rem 2rem',
+                backgroundColor: 'transparent',
+                color: '#ffffff',
+                fontWeight: '700',
+                fontSize: '1.125rem',
+                borderRadius: '0.5rem',
+                border: '2px solid #4a5568',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.borderColor = '#00FF90';
-                e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 255, 144, 0.3)';
+                e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 255, 144, 0.4)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = '#4a5568';

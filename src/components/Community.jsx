@@ -136,14 +136,24 @@ const Community = () => {
                 </div>
 
                 <button
-                  className="w-full py-2 bg-gray-800 text-white font-bold rounded-lg transition-all duration-300"
+                  style={{
+                    width: '100%',
+                    padding: '0.5rem',
+                    backgroundColor: '#1f2937',
+                    color: '#ffffff',
+                    fontWeight: '700',
+                    borderRadius: '0.5rem',
+                    border: 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease'
+                  }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = '#00FF90';
-                    e.currentTarget.style.color = '#000';
+                    e.currentTarget.style.color = '#000000';
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.backgroundColor = '#1f2937';
-                    e.currentTarget.style.color = '#fff';
+                    e.currentTarget.style.color = '#ffffff';
                   }}
                 >
                   Участвовать

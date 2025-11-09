@@ -168,16 +168,25 @@ const HowItWorks = () => {
               Готов начать свой путь?
             </p>
             <button
-              className="px-10 py-5 text-black font-black text-lg rounded-lg hover:scale-105 transition-all duration-300"
               style={{
+                padding: '1.25rem 2.5rem',
                 backgroundColor: '#00FF90',
-                boxShadow: '0 4px 20px rgba(0, 255, 144, 0.4)'
+                color: '#000000',
+                fontWeight: '900',
+                fontSize: '1.125rem',
+                borderRadius: '0.5rem',
+                border: 'none',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 20px rgba(0, 255, 144, 0.5)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.7)';
+                e.currentTarget.style.transform = 'scale(1.05)';
+                e.currentTarget.style.boxShadow = '0 0 40px rgba(0, 255, 144, 0.8)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.4)';
+                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 255, 144, 0.5)';
               }}
             >
               Начать обучение сейчас
